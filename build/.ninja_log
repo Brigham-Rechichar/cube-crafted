@@ -1,0 +1,7 @@
+# ninja log v5
+12	505	7824282719662496	CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj	519eb7eeea7baa76
+15	736	7824282721969953	CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj	10d0fbf942cf51be
+8	741	7824282722016058	CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj	eb06ebbb4ce6f632
+4	813	7824282722747547	CMakeFiles/MineCraftClone.dir/src/main.cpp.obj	dd31fc0bf2edb0af
+19	932	7824282723918701	CMakeFiles/MineCraftClone.dir/src/glad.c.obj	baee094e9e0b90cf
+934	1058	7824282725117724	MineCraftClone.exe	d578077e8a57e71a
