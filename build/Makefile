@@ -128,6 +128,30 @@ MineCraftClone/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/build
 .PHONY : MineCraftClone/fast
 
+src/entities/block.obj: src/entities/block.cpp.obj
+.PHONY : src/entities/block.obj
+
+# target to build an object file
+src/entities/block.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/src/entities/block.cpp.obj
+.PHONY : src/entities/block.cpp.obj
+
+src/entities/block.i: src/entities/block.cpp.i
+.PHONY : src/entities/block.i
+
+# target to preprocess a source file
+src/entities/block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/src/entities/block.cpp.i
+.PHONY : src/entities/block.cpp.i
+
+src/entities/block.s: src/entities/block.cpp.s
+.PHONY : src/entities/block.s
+
+# target to generate assembly for a file
+src/entities/block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/src/entities/block.cpp.s
+.PHONY : src/entities/block.cpp.s
+
 src/entities/camera.obj: src/entities/camera.cpp.obj
 .PHONY : src/entities/camera.obj
 
@@ -257,6 +281,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MineCraftClone
+	@echo ... src/entities/block.obj
+	@echo ... src/entities/block.i
+	@echo ... src/entities/block.s
 	@echo ... src/entities/camera.obj
 	@echo ... src/entities/camera.i
 	@echo ... src/entities/camera.s

@@ -1,6 +1,6 @@
 #include "../../include/entities/block.h"
 
-block::block(std::vector<float> cubeVertices){
+cubeMesh::cubeMesh(std::vector<float> cubeVertices){
 
     //generating buffers for the cube
     glGenVertexArrays(1, &VAO);
@@ -23,13 +23,13 @@ block::block(std::vector<float> cubeVertices){
 }
 
 
-void block::draw(){
+void cubeMesh::draw(){
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 36);
     glBindVertexArray(0);
 }
 
-block::~block(){
+cubeMesh::~cubeMesh(){
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
 }

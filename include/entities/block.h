@@ -1,10 +1,10 @@
 #include "../../src/config.h"
 
-class block {
+class cubeMesh {
 public:
-    block();
+    cubeMesh(std::vector<float>);
     void draw();
-    ~block();
+    ~cubeMesh();
 private:
     unsigned int VAO, VBO;
 };

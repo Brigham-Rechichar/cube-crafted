@@ -1,6 +1,7 @@
-CMakeFiles/MineCraftClone.dir/src/main.cpp.obj: \
- C:\Users\brigg\Downloads\coding\ practice\minecraft_clone\src\main.cpp \
- C:\Users\brigg\Downloads\coding\ practice\minecraft_clone\src\config.h \
+CMakeFiles/MineCraftClone.dir/src/entities/block.cpp.obj: \
+ C:\Users\brigg\Downloads\coding\ practice\minecraft_clone\src\entities\block.cpp \
+ C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/entities/block.h \
+ C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/config.h \
  C:/Users/brigg/DOWNLO~1/CODING~1/MINECR~1/DEPEND~1/glad/glad.h \
  C:/Users/brigg/DOWNLO~1/CODING~1/MINECR~1/DEPEND~1/KHR/khrplatform.h \
  C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/crtdefs.h \
@@ -355,9 +356,4 @@ CMakeFiles/MineCraftClone.dir/src/main.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/mingw64/include/c++/15.2.0/bits/fstream.tcc \
  C:/mingw64/include/c++/15.2.0/sstream \
- C:/mingw64/include/c++/15.2.0/bits/sstream.tcc \
- C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/entities/triangle.h \
- C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/shaders/shader.h \
- C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/config.h \
- C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/entities/block.h \
- C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/config.h
+ C:/mingw64/include/c++/15.2.0/bits/sstream.tcc
