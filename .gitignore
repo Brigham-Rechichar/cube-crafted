@@ -44,4 +44,4 @@
 *.json
 
 #Build file
-*build/
+/build/
