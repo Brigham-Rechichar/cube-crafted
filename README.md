@@ -1,4 +1,4 @@
 Tech stack:
-open GL
-CMake
-MSYS 64 complier
+open GL  https://www.glfw.org/download.html
+CMake  https://cmake.org
+MSYS 64 complier  https://www.msys2.org
