@@ -19,6 +19,12 @@
 },
 {
   "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
+  "command": "c:\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_CXX.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\entities\\camera.cpp.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\entities\\camera.cpp\"",
+  "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/entities/camera.cpp",
+  "output": "CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj"
+},
+{
+  "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
   "command": "c:\\mingw64\\bin\\gcc.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_C.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\glad.c.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\glad.c\"",
   "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/glad.c",
   "output": "CMakeFiles/MineCraftClone.dir/src/glad.c.obj"

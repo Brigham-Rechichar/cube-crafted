@@ -84,12 +84,12 @@ clean: CMakeFiles/MineCraftClone.dir/clean
 CMakeFiles/MineCraftClone.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=1,2,3,4,5 "Built target MineCraftClone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target MineCraftClone"
 .PHONY : CMakeFiles/MineCraftClone.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MineCraftClone.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MineCraftClone.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" 0
 .PHONY : CMakeFiles/MineCraftClone.dir/rule
@@ -101,7 +101,7 @@ MineCraftClone: CMakeFiles/MineCraftClone.dir/rule
 # codegen rule for target.
 CMakeFiles/MineCraftClone.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=1,2,3,4,5 "Finished codegen for target MineCraftClone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=1,2,3,4,5,6 "Finished codegen for target MineCraftClone"
 .PHONY : CMakeFiles/MineCraftClone.dir/codegen
 
 # clean rule for target.

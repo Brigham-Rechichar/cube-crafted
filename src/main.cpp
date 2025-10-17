@@ -24,7 +24,7 @@ int main() {
 		return -1;
 	}
 
-    glClearColor(0.25f,0.5f,0.75f,1.0f);
+    //glClearColor(0.25f,0.5f,0.75f,1.0f);
 
     if (!window) {
         std::cout << "Failed to create window\n";

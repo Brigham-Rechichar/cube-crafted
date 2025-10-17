@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj"
+  "CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj.d"
   "CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj"
   "CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj.d"
   "CMakeFiles/MineCraftClone.dir/src/glad.c.obj"

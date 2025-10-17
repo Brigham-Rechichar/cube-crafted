@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/glad.c" "CMakeFiles/MineCraftClone.dir/src/glad.c.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/glad.c.obj.d"
+  "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/entities/camera.cpp" "CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj.d"
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/entities/triangle.cpp" "CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj.d"
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/shader.cpp" "CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj.d"
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/main.cpp" "CMakeFiles/MineCraftClone.dir/src/main.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/main.cpp.obj.d"

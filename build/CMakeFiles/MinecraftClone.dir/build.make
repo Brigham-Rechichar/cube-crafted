@@ -116,11 +116,26 @@ CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.s"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\graphics\shader.cpp" -o CMakeFiles\MineCraftClone.dir\src\graphics\shader.cpp.s
 
+CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: CMakeFiles/MineCraftClone.dir/flags.make
+CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
+CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/entities/camera.cpp
+CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj"
+	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\entities\camera.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\entities\camera.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\entities\camera.cpp"
+
+CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.i"
+	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\entities\camera.cpp" > CMakeFiles\MineCraftClone.dir\src\entities\camera.cpp.i
+
+CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.s"
+	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\entities\camera.cpp" -o CMakeFiles\MineCraftClone.dir\src\entities\camera.cpp.s
+
 CMakeFiles/MineCraftClone.dir/src/glad.c.obj: CMakeFiles/MineCraftClone.dir/flags.make
 CMakeFiles/MineCraftClone.dir/src/glad.c.obj: CMakeFiles/MineCraftClone.dir/includes_C.rsp
 CMakeFiles/MineCraftClone.dir/src/glad.c.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/glad.c
 CMakeFiles/MineCraftClone.dir/src/glad.c.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MineCraftClone.dir/src/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/MineCraftClone.dir/src/glad.c.obj"
 	c:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/glad.c.obj -MF CMakeFiles\MineCraftClone.dir\src\glad.c.obj.d -o CMakeFiles\MineCraftClone.dir\src\glad.c.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\glad.c"
 
 CMakeFiles/MineCraftClone.dir/src/glad.c.i: cmake_force
@@ -136,6 +151,7 @@ MineCraftClone_OBJECTS = \
 "CMakeFiles/MineCraftClone.dir/src/main.cpp.obj" \
 "CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj" \
 "CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj" \
+"CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj" \
 "CMakeFiles/MineCraftClone.dir/src/glad.c.obj"
 
 # External object files for target MineCraftClone
@@ -144,13 +160,14 @@ MineCraftClone_EXTERNAL_OBJECTS =
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/main.cpp.obj
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj
+MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/glad.c.obj
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/build.make
 MineCraftClone.exe: C:/msys64/ucrt64/lib/libglfw3.dll.a
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/linkLibs.rsp
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/objects1.rsp
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MineCraftClone.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MineCraftClone.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MineCraftClone.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
