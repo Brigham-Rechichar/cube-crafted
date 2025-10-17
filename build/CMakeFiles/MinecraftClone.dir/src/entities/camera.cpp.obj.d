@@ -1,19 +1,42 @@
-CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: \
- C:\Users\brigg\Downloads\coding\ practice\minecraft_clone\src\entities\triangle.cpp \
- C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/entities/triangle.h \
- C:/mingw64/include/c++/15.2.0/vector \
+CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: \
+ C:\Users\brigg\Downloads\coding\ practice\minecraft_clone\src\entities\camera.cpp \
+ C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/entities/camera.h \
+ C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/config.h \
+ C:/Users/brigg/DOWNLO~1/CODING~1/MINECR~1/DEPEND~1/glad/glad.h \
+ C:/Users/brigg/DOWNLO~1/CODING~1/MINECR~1/DEPEND~1/KHR/khrplatform.h \
+ C:/msys64/ucrt64/include/stdint.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
+ C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+ C:/msys64/ucrt64/include/stddef.h \
+ C:/Users/brigg/DOWNLO~1/CODING~1/MINECR~1/DEPEND~1/GLFW/glfw3.h \
+ C:/msys64/ucrt64/include/glm/glm.hpp \
+ C:/msys64/ucrt64/include/glm/detail/_fixes.hpp \
+ C:/mingw64/include/c++/15.2.0/cmath \
  C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
- C:/mingw64/include/c++/15.2.0/bits/functexcept.h \
- C:/mingw64/include/c++/15.2.0/bits/exception_defines.h \
  C:/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
  C:/mingw64/include/c++/15.2.0/bits/version.h \
  C:/mingw64/include/c++/15.2.0/type_traits \
  C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
+ C:/mingw64/x86_64-w64-mingw32/include/math.h \
+ C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/msys64/ucrt64/include/corecrt_wstdlib.h \
+ C:/msys64/ucrt64/include/limits.h \
+ C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+ C:/msys64/ucrt64/include/stdlib.h C:/msys64/ucrt64/include/malloc.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+ C:/msys64/ucrt64/include/errno.h \
+ C:/mingw64/include/c++/15.2.0/bits/specfun.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
+ C:/mingw64/include/c++/15.2.0/bits/functexcept.h \
+ C:/mingw64/include/c++/15.2.0/bits/exception_defines.h \
  C:/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_pair.h \
  C:/mingw64/include/c++/15.2.0/bits/move.h \
@@ -27,55 +50,6 @@ CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/debug/debug.h \
  C:/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
  C:/mingw64/include/c++/15.2.0/bit C:/mingw64/include/c++/15.2.0/concepts \
- C:/mingw64/include/c++/15.2.0/bits/allocator.h \
- C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/mingw64/include/c++/15.2.0/bits/new_allocator.h \
- C:/mingw64/include/c++/15.2.0/new \
- C:/mingw64/include/c++/15.2.0/bits/exception.h \
- C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_construct.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
- C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
- C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
- C:/mingw64/include/c++/15.2.0/initializer_list \
- C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/15.2.0/bits/functional_hash.h \
- C:/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
- C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
- C:/mingw64/include/c++/15.2.0/bits/invoke.h \
- C:/mingw64/include/c++/15.2.0/bits/stl_function.h \
- C:/mingw64/include/c++/15.2.0/backward/binders.h \
- C:/mingw64/include/c++/15.2.0/bits/range_access.h \
- C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
- C:/mingw64/include/c++/15.2.0/bits/memory_resource.h \
- C:/mingw64/include/c++/15.2.0/cstddef C:/msys64/ucrt64/include/stddef.h \
- C:/msys64/ucrt64/include/crtdefs.h C:/msys64/ucrt64/include/corecrt.h \
- C:/msys64/ucrt64/include/_mingw.h C:/msys64/ucrt64/include/_mingw_mac.h \
- C:/msys64/ucrt64/include/_mingw_secapi.h \
- C:/msys64/ucrt64/include/vadefs.h \
- C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
- C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
- C:/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
- C:/mingw64/include/c++/15.2.0/tuple \
- C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/config.h \
- C:/Users/brigg/DOWNLO~1/CODING~1/MINECR~1/DEPEND~1/glad/glad.h \
- C:/Users/brigg/DOWNLO~1/CODING~1/MINECR~1/DEPEND~1/KHR/khrplatform.h \
- C:/msys64/ucrt64/include/stdint.h \
- C:/Users/brigg/DOWNLO~1/CODING~1/MINECR~1/DEPEND~1/GLFW/glfw3.h \
- C:/msys64/ucrt64/include/glm/glm.hpp \
- C:/msys64/ucrt64/include/glm/detail/_fixes.hpp \
- C:/mingw64/include/c++/15.2.0/cmath \
- C:/mingw64/x86_64-w64-mingw32/include/math.h \
- C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
- C:/msys64/ucrt64/include/corecrt_wstdlib.h \
- C:/msys64/ucrt64/include/limits.h \
- C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
- C:/msys64/ucrt64/include/stdlib.h C:/msys64/ucrt64/include/malloc.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
- C:/msys64/ucrt64/include/errno.h \
- C:/mingw64/include/c++/15.2.0/bits/specfun.h \
  C:/mingw64/include/c++/15.2.0/limits \
  C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
  C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
@@ -91,6 +65,7 @@ CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
  C:/msys64/ucrt64/include/glm/detail/setup.hpp \
  C:/mingw64/include/c++/15.2.0/cassert C:/msys64/ucrt64/include/assert.h \
+ C:/mingw64/include/c++/15.2.0/cstddef \
  C:/msys64/ucrt64/include/glm/simd/platform.h \
  C:/mingw64/include/c++/15.2.0/cstdint \
  C:/mingw64/include/c++/15.2.0/climits \
@@ -282,6 +257,7 @@ CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/ostream.h \
  C:/mingw64/include/c++/15.2.0/ios C:/mingw64/include/c++/15.2.0/iosfwd \
  C:/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+ C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
  C:/mingw64/include/c++/15.2.0/bits/postypes.h \
  C:/mingw64/include/c++/15.2.0/cwchar C:/msys64/ucrt64/include/wchar.h \
  C:/msys64/ucrt64/include/corecrt_stdio_config.h \
@@ -291,9 +267,12 @@ CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: \
  C:/msys64/ucrt64/include/swprintf.inl \
  C:/msys64/ucrt64/include/sec_api/wchar_s.h \
  C:/mingw64/include/c++/15.2.0/exception \
+ C:/mingw64/include/c++/15.2.0/bits/exception.h \
  C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
  C:/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
  C:/mingw64/include/c++/15.2.0/typeinfo \
+ C:/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
+ C:/mingw64/include/c++/15.2.0/new \
  C:/mingw64/include/c++/15.2.0/bits/nested_exception.h \
  C:/mingw64/include/c++/15.2.0/bits/char_traits.h \
  C:/mingw64/include/c++/15.2.0/bits/localefwd.h \
@@ -321,10 +300,23 @@ CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
  C:/mingw64/include/c++/15.2.0/bits/locale_classes.h \
  C:/mingw64/include/c++/15.2.0/string \
+ C:/mingw64/include/c++/15.2.0/bits/allocator.h \
+ C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/mingw64/include/c++/15.2.0/bits/new_allocator.h \
  C:/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
  C:/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_function.h \
+ C:/mingw64/include/c++/15.2.0/backward/binders.h \
+ C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
+ C:/mingw64/include/c++/15.2.0/bits/invoke.h \
+ C:/mingw64/include/c++/15.2.0/bits/range_access.h \
+ C:/mingw64/include/c++/15.2.0/initializer_list \
  C:/mingw64/include/c++/15.2.0/bits/basic_string.h \
+ C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
+ C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_construct.h \
  C:/mingw64/include/c++/15.2.0/string_view \
+ C:/mingw64/include/c++/15.2.0/bits/functional_hash.h \
  C:/mingw64/include/c++/15.2.0/bits/string_view.tcc \
  C:/mingw64/include/c++/15.2.0/ext/string_conversions.h \
  C:/mingw64/include/c++/15.2.0/cstdlib \
@@ -332,6 +324,10 @@ CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/cerrno \
  C:/mingw64/include/c++/15.2.0/bits/charconv.h \
  C:/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
+ C:/mingw64/include/c++/15.2.0/bits/memory_resource.h \
+ C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
+ C:/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
+ C:/mingw64/include/c++/15.2.0/tuple \
  C:/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
  C:/mingw64/include/c++/15.2.0/system_error \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
@@ -349,6 +345,11 @@ CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  C:/mingw64/include/c++/15.2.0/istream \
  C:/mingw64/include/c++/15.2.0/bits/istream.tcc \
+ C:/mingw64/include/c++/15.2.0/vector \
+ C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+ C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
  C:/mingw64/include/c++/15.2.0/fstream \
  C:/mingw64/include/c++/15.2.0/bits/codecvt.h \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
