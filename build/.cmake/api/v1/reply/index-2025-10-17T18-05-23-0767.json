@@ -4,38 +4,38 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "MinGW Makefiles"
+			"name" : "Ninja"
 		},
 		"paths" : 
 		{
 			"cmake" : "C:/Program Files/CMake/bin/cmake.exe",
 			"cpack" : "C:/Program Files/CMake/bin/cpack.exe",
 			"ctest" : "C:/Program Files/CMake/bin/ctest.exe",
-			"root" : "C:/Program Files/CMake/share/cmake-4.1"
+			"root" : "C:/Program Files/CMake/share/cmake-4.2"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 4,
-			"minor" : 1,
-			"patch" : 2,
-			"string" : "4.1.2",
-			"suffix" : ""
+			"minor" : 2,
+			"patch" : 0,
+			"string" : "4.2.0-rc1",
+			"suffix" : "rc1"
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-57c5befd2e6081abe691.json",
+			"jsonFile" : "codemodel-v2-47a9019f910e8c1e4483.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 8
+				"minor" : 9
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-a5f8b4b6b27ca37c04a0.json",
+			"jsonFile" : "cache-v2-c1081eef2036bf4fa5c5.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-6bf730ef09713912e090.json",
+			"jsonFile" : "cmakeFiles-v1-f0f6ff64f5f318d47247.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-a3ccdea920b48627c482.json",
+			"jsonFile" : "toolchains-v1-37df4e443f7fdbcb255a.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-a5f8b4b6b27ca37c04a0.json",
+						"jsonFile" : "cache-v2-c1081eef2036bf4fa5c5.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,16 +99,16 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-57c5befd2e6081abe691.json",
+						"jsonFile" : "codemodel-v2-47a9019f910e8c1e4483.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
 							"major" : 2,
-							"minor" : 8
+							"minor" : 9
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-a3ccdea920b48627c482.json",
+						"jsonFile" : "toolchains-v1-37df4e443f7fdbcb255a.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
@@ -117,7 +117,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-6bf730ef09713912e090.json",
+						"jsonFile" : "cmakeFiles-v1-f0f6ff64f5f318d47247.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

@@ -46,6 +46,22 @@
 			}
 		]
 	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "OpenGL::GL::@6890427a1f51a3e7e1df"
+		}
+	],
 	"compileGroups" : 
 	[
 		{
@@ -66,12 +82,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/brigg/Downloads/coding practice/minecraft_clone/dependencies"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "C:/msys64/ucrt64/include"
+					"path" : "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/dependencies"
 				}
 			],
 			"language" : "CXX",
@@ -101,12 +112,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/brigg/Downloads/coding practice/minecraft_clone/dependencies"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "C:/msys64/ucrt64/include"
+					"path" : "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/dependencies"
 				}
 			],
 			"language" : "C",
@@ -142,6 +148,17 @@
 		],
 		"language" : "CXX"
 	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "OpenGL::GL::@6890427a1f51a3e7e1df"
+		}
+	],
 	"name" : "MineCraftClone",
 	"nameOnDisk" : "MineCraftClone.exe",
 	"paths" : 

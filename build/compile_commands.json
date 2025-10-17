@@ -1,32 +1,32 @@
 [
 {
-  "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
-  "command": "c:\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_CXX.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\main.cpp.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\main.cpp\"",
-  "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/main.cpp",
-  "output": "CMakeFiles/MineCraftClone.dir/src/main.cpp.obj"
+  "directory": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL -IC:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/dependencies -g -o CMakeFiles\\MineCraftClone.dir\\src\\main.cpp.obj -c C:\\Users\\jwmah\\OneDrive\\Desktop\\coding\\for_me\\cube-crafted\\src\\main.cpp",
+  "file": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/src/main.cpp",
+  "output": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build/CMakeFiles/MineCraftClone.dir/src/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
-  "command": "c:\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_CXX.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\entities\\triangle.cpp.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\entities\\triangle.cpp\"",
-  "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/entities/triangle.cpp",
-  "output": "CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj"
+  "directory": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL -IC:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/dependencies -g -o CMakeFiles\\MineCraftClone.dir\\src\\entities\\triangle.cpp.obj -c C:\\Users\\jwmah\\OneDrive\\Desktop\\coding\\for_me\\cube-crafted\\src\\entities\\triangle.cpp",
+  "file": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/src/entities/triangle.cpp",
+  "output": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build/CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj"
 },
 {
-  "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
-  "command": "c:\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_CXX.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\graphics\\shader.cpp.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\graphics\\shader.cpp\"",
-  "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/shader.cpp",
-  "output": "CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj"
+  "directory": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL -IC:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/dependencies -g -o CMakeFiles\\MineCraftClone.dir\\src\\graphics\\shader.cpp.obj -c C:\\Users\\jwmah\\OneDrive\\Desktop\\coding\\for_me\\cube-crafted\\src\\graphics\\shader.cpp",
+  "file": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/src/graphics/shader.cpp",
+  "output": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build/CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj"
 },
 {
-  "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
-  "command": "c:\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_CXX.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\entities\\camera.cpp.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\entities\\camera.cpp\"",
-  "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/entities/camera.cpp",
-  "output": "CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj"
+  "directory": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL -IC:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/dependencies -g -o CMakeFiles\\MineCraftClone.dir\\src\\entities\\camera.cpp.obj -c C:\\Users\\jwmah\\OneDrive\\Desktop\\coding\\for_me\\cube-crafted\\src\\entities\\camera.cpp",
+  "file": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/src/entities/camera.cpp",
+  "output": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build/CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj"
 },
 {
-  "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
-  "command": "c:\\mingw64\\bin\\gcc.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_C.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\glad.c.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\glad.c\"",
-  "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/glad.c",
-  "output": "CMakeFiles/MineCraftClone.dir/src/glad.c.obj"
+  "directory": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DGLFW_DLL -IC:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/dependencies -g -o CMakeFiles\\MineCraftClone.dir\\src\\glad.c.obj -c C:\\Users\\jwmah\\OneDrive\\Desktop\\coding\\for_me\\cube-crafted\\src\\glad.c",
+  "file": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/src/glad.c",
+  "output": "C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build/CMakeFiles/MineCraftClone.dir/src/glad.c.obj"
 }
 ]

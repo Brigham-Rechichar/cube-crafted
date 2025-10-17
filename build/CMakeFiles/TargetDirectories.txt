@@ -1,0 +1,3 @@
+C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build/CMakeFiles/MineCraftClone.dir
+C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build/CMakeFiles/edit_cache.dir
+C:/Users/jwmah/OneDrive/Desktop/coding/for_me/cube-crafted/build/CMakeFiles/rebuild_cache.dir
