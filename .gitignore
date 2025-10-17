@@ -42,3 +42,6 @@
 
 #Json files
 *.json
+
+#Build file
+*Build/
