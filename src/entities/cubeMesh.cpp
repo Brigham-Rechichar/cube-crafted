@@ -1,4 +1,4 @@
-#include "../../include/entities/block.h"
+#include "../../include/entities/cubeMesh.h"
 
 cubeMesh::cubeMesh(std::vector<float> cubeVertices){
 
