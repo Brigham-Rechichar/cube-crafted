@@ -1,5 +1,6 @@
 
-#include "world.h"
+#include "../../include/world/world.h"
+
 /*
 define block class:
 enum for block type (grass,stone,dirt,air)
