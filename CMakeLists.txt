@@ -8,7 +8,7 @@ find_package(glfw3 REQUIRED)
 add_executable(MineCraftClone
     src/main.cpp
     src/entities/triangle.cpp
-    src/entities/block.cpp
+    src/entities/cubeMesh.cpp
     src/graphics/shader.cpp
     src/entities/camera.cpp
     src/glad.c

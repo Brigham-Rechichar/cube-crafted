@@ -3,12 +3,19 @@
 #include "config.h"
 #include "../include/entities/triangle.h"
 #include "../include/shaders/shader.h"
-#include"../include/entities/block.h"
+#include"../include/entities/cubeMesh.h"
+#include"../include/entities/camera.h"
 
+void processInput(GLFWwindow* window, float deltaTime);
 
+//camera object
+Camera camera;
+
+#include <filesystem>
 int main() {
 
-    //create a triangle
+std::cout << "Current working directory: " << std::filesystem::current_path() << std::endl;
+
 
     if (!glfwInit()) {
         std::cout << "Failed to initialize GLFW\n";
@@ -25,8 +32,6 @@ int main() {
 		return -1;
 	}
 
-    //glClearColor(0.25f,0.5f,0.75f,1.0f);
-
     if (!window) {
         std::cout << "Failed to create window\n";
         glfwTerminate();
@@ -34,18 +39,6 @@ int main() {
     }
 
     glEnable(GL_DEPTH_TEST);
-
-    // std::vector<float> T1 = {
-    //     -0.5f,-0.5f,0.0f,
-    //     -0.5f,0.5f,0.0f,
-    //     0.5f,-0.5f,0.0f
-    // };
-    // std::vector<float> T2 = {
-    //     0.5f,-0.5f,0.0f,
-    //     -0.5f,0.5f,0.0f,
-    //     0.5f,0.5f,0.0f
-    // };
-
 
     std::vector<float> C1 = {
     // Front face
@@ -97,14 +90,12 @@ int main() {
      0.5f, -0.5f,  0.5f
 };
 
-
-
-    Shader shader("graphics/vertex.glsl", "graphics/fragment.glsl");
+    Shader shader("../src/graphics/vertex.glsl", "../src/graphics/fragment.glsl");
 
     cubeMesh Cube(C1);
 
     glm::mat4 model = glm::mat4(1.0f);
-    glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -3.0f));
+    glm::mat4 view = camera.getViewMatrix();
     glm::mat4 projection = glm::perspective(glm::radians(45.0f), 800.0f/600.0f, 0.1f, 100.0f);
 
     shader.use();
@@ -113,15 +104,30 @@ int main() {
     shader.setMat4("projection", projection);
 
 
+    float currentFrame;
+    float lastFrame=0.0f;
 
     while (!glfwWindowShouldClose(window)) {
+
+        // std::cout << "Camera position: " 
+        //   << camera.position.x << " " 
+        //   << camera.position.y << " " 
+        //   << camera.position.z << std::endl;
+
         glClearColor(0.25f,0.5f,0.75f,1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         shader.use();
+        glm::mat4 view = camera.getViewMatrix();
+        shader.setMat4("view", view);
 
-        float time = glfwGetTime();
-        shader.setMat4("model", model);
+        currentFrame = glfwGetTime();
+        float deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+
+        processInput(window, deltaTime);
+
+        
 
         Cube.draw();  // draw *after* updating uniforms
 
@@ -131,4 +137,16 @@ int main() {
 
     glfwTerminate();
     return 0;
+}
+
+
+void processInput(GLFWwindow* window, float deltaTime) {
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        camera.processKeyboard('W', deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        camera.processKeyboard('S', deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        camera.processKeyboard('A', deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        camera.processKeyboard('D', deltaTime);
 }
