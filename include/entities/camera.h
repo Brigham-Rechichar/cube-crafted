@@ -1,6 +1,6 @@
 
-#include "../../src/config.h"
-#pragma once
 
+#pragma once
+#include "../../src/config.h"
 
 class Camera{};

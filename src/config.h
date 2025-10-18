@@ -1,4 +1,4 @@
-
+#pragma once
 
 //external libraries
 #include <glad/glad.h>
