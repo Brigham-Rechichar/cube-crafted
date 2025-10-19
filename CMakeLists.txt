@@ -7,10 +7,12 @@ find_package(glfw3 REQUIRED)
 
 add_executable(MineCraftClone
     src/main.cpp
+    src/world/block.cpp
+    src/world/world.cpp
     src/entities/triangle.cpp
     src/entities/cubeMesh.cpp
-    src/graphics/shader.cpp
     src/entities/camera.cpp
+    src/graphics/shader.cpp
     src/glad.c
 )
 

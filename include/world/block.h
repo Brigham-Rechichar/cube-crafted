@@ -13,6 +13,7 @@ class block{
     bool active;
     cubeMesh mesh;
 
+    public:
     block(BlockType type, glm::vec3 position);
     void draw(Shader& shader);
 

@@ -4,6 +4,7 @@
 class cubeMesh {
 public:
     cubeMesh(std::vector<float>);
+    cubeMesh();
     void draw();
     ~cubeMesh();
 private:

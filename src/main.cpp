@@ -5,6 +5,7 @@
 #include "../include/shaders/shader.h"
 #include"../include/entities/cubeMesh.h"
 #include"../include/entities/camera.h"
+#include "../include/world/world.h"
 
 int main() {
 
@@ -42,70 +43,17 @@ int main() {
 
     glEnable(GL_DEPTH_TEST);
 
-    std::vector<float> C1 = {
-    // Front face
-    -0.5f, -0.5f,  0.5f,
-     0.5f, -0.5f,  0.5f,
-     0.5f,  0.5f,  0.5f,
-    -0.5f, -0.5f,  0.5f,
-     0.5f,  0.5f,  0.5f,
-    -0.5f,  0.5f,  0.5f,
-
-    // Back face
-    -0.5f, -0.5f, -0.5f,
-     0.5f,  0.5f, -0.5f,
-     0.5f, -0.5f, -0.5f,
-    -0.5f, -0.5f, -0.5f,
-    -0.5f,  0.5f, -0.5f,
-     0.5f,  0.5f, -0.5f,
-
-    // Left face
-    -0.5f, -0.5f, -0.5f,
-    -0.5f, -0.5f,  0.5f,
-    -0.5f,  0.5f,  0.5f,
-    -0.5f, -0.5f, -0.5f,
-    -0.5f,  0.5f,  0.5f,
-    -0.5f,  0.5f, -0.5f,
-
-    // Right face
-     0.5f, -0.5f, -0.5f,
-     0.5f,  0.5f,  0.5f,
-     0.5f, -0.5f,  0.5f,
-     0.5f, -0.5f, -0.5f,
-     0.5f,  0.5f, -0.5f,
-     0.5f,  0.5f,  0.5f,
-
-    // Top face
-    -0.5f,  0.5f, -0.5f,
-    -0.5f,  0.5f,  0.5f,
-     0.5f,  0.5f,  0.5f,
-    -0.5f,  0.5f, -0.5f,
-     0.5f,  0.5f,  0.5f,
-     0.5f,  0.5f, -0.5f,
-
-    // Bottom face
-    -0.5f, -0.5f, -0.5f,
-     0.5f, -0.5f,  0.5f,
-    -0.5f, -0.5f,  0.5f,
-    -0.5f, -0.5f, -0.5f,
-     0.5f, -0.5f, -0.5f,
-     0.5f, -0.5f,  0.5f
-};
 
     Shader shader("../src/graphics/vertex.glsl", "../src/graphics/fragment.glsl");
-<<<<<<< HEAD
-=======
-    
->>>>>>> 2f85fe62430ca614f714d6ff2455aa5ff7ecfe68
 
-
-
-    cubeMesh Cube(C1);
 
     Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 
     float currentFrame;
     float lastFrame=0.0f;
+
+    World world(16,16,8);
+    world.generate();
 
     while (!glfwWindowShouldClose(window)) {
 
@@ -119,7 +67,7 @@ int main() {
 
         glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f));
         shader.setMat4("model", model);
-        Cube.draw();  // draw *after* updating uniforms
+        world.draw(shader);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
