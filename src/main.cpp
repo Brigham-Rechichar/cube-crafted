@@ -92,7 +92,8 @@ int main() {
      0.5f, -0.5f,  0.5f
 };
 
-    Shader shader("src/graphics/vertex.glsl", "src/graphics/fragment.glsl");
+    Shader shader("../src/graphics/vertex.glsl", "../src/graphics/fragment.glsl");
+    
 
     //Shader shader("C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/vertex.glsl","C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/fragment.glsl");
 

@@ -5,15 +5,15 @@
             "includePath": [
                 "${default}",
                 "${workspaceFolder}/**",
-                "C:/msys64/ucrt64/include",
-                "C:/msys64/ucrt64/include/GLFW"
+                "C:/msys64/ucrt64/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "GLM_ENABLE_EXPERIMENTAL"
             ],
-            "compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
             "intelliSenseMode": "windows-gcc-x64"
