@@ -3,7 +3,7 @@
 // Include matrix libs and camera
 #include <glm/glm.hpp>
 #include <GLFW/glfw3.h>
-#include "entities/camera.h"
+#include "camera.h"
 
 class Player {
     public:
@@ -17,10 +17,10 @@ class Player {
 
 
         // Movement presets
-        float moveSpeed = 4.0f;
-        float sprintSpeed = 7.0f;
-        float gravity = -20.0f;
-        float jumpVel = 7.0f;
+        float moveSpeed = 6.0f;
+        float sprintSpeed = 9.0f;
+        float gravity = -25.0f;
+        float jumpVel = 8.5f;
         float eyeHeight = 1.8f;
         float groundY = 0.0f;
 
