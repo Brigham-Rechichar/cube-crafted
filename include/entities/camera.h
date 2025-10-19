@@ -2,33 +2,28 @@
 
 #pragma once
 #include "../../src/config.h"
+#include "../shaders/shader.h"
 
 class Camera{
+    glm::vec3 Position;
+    glm::vec3 Orientation = glm::vec3 (0.0f,0.0f,-1.0f);
+    glm::vec3 Up = glm::vec3 (0.0f,1.0f,0.0f);
+
+    bool firstClick;
+
+    int Wwidith;
+    int Wheight;
+
+    float speed = 0.1f;
+    float sensitivity = 100.0f;
+
     public:
-        glm::vec3 position;
-        glm::vec3 front;
-        glm::vec3 up;
-        glm::vec3 right;
-        glm::vec3 worldUp;
+    //initilizes the camera
+    Camera(int width, int height, glm::vec3 position);
 
-        float yaw;
-        float pitch;
-        float speed;
-        float sensitivity;
+    // Updates and exports the camera matrix to the Vertex Shader
+	void Matrix(float FOVdeg, float nearPlane, float farPlane, Shader& shader, const char* uniform);
 
-
-        //constructor setting the starting position,yaw,and pitch
-        Camera(
-            glm::vec3 startPos = glm::vec3(0.0f,0.0f,3.0f),
-            glm::vec3 startUp = glm::vec3(0.0f,1.0f,0.0f),
-            float startYaw = -90.0f,
-            float startPitch = 0.0f);
-
-        glm::mat4 getViewMatrix() const;
-        void processKeyboard(char direction, float deltaTime);
-        void processMouseMovement(float xoffset, float yoffset);
-
-    private:
-
-        void UpdateCameraVectors();
+	// Handles camera inputs
+	void Inputs(GLFWwindow* window);
 };

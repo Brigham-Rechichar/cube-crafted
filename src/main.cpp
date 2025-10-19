@@ -6,23 +6,25 @@
 #include"../include/entities/cubeMesh.h"
 #include"../include/entities/camera.h"
 
-void processInput(GLFWwindow* window, float deltaTime);
-
-//camera object
-Camera camera;
-
-#include <filesystem>
 int main() {
 
-std::cout << "Current working directory: " << std::filesystem::current_path() << std::endl;
 
+    // Tell GLFW what version of OpenGL we are using 
+	// In this case we are using OpenGL 3.3
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	// Tell GLFW we are using the CORE profile
+	// So that means we only have the modern functions
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     if (!glfwInit()) {
         std::cout << "Failed to initialize GLFW\n";
         return -1;
     }
 
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Minecraft Clone", NULL, NULL);
+    int width =800;
+    int height =600;
+    GLFWwindow* window = glfwCreateWindow(width, height, "Minecraft Clone", NULL, NULL);
 
     glfwMakeContextCurrent(window);
 
@@ -94,15 +96,7 @@ std::cout << "Current working directory: " << std::filesystem::current_path() <<
 
     cubeMesh Cube(C1);
 
-    glm::mat4 model = glm::mat4(1.0f);
-    glm::mat4 view = camera.getViewMatrix();
-    glm::mat4 projection = glm::perspective(glm::radians(45.0f), 800.0f/600.0f, 0.1f, 100.0f);
-
-    shader.use();
-    shader.setMat4("model", model);
-    shader.setMat4("view", view);
-    shader.setMat4("projection", projection);
-
+    Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 
     float currentFrame;
     float lastFrame=0.0f;
@@ -117,18 +111,7 @@ std::cout << "Current working directory: " << std::filesystem::current_path() <<
         glClearColor(0.25f,0.5f,0.75f,1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        shader.use();
-        glm::mat4 view = camera.getViewMatrix();
-        shader.setMat4("view", view);
-
-        currentFrame = glfwGetTime();
-        float deltaTime = currentFrame - lastFrame;
-        lastFrame = currentFrame;
-
-        processInput(window, deltaTime);
-
         
-
         Cube.draw();  // draw *after* updating uniforms
 
         glfwSwapBuffers(window);
@@ -137,16 +120,4 @@ std::cout << "Current working directory: " << std::filesystem::current_path() <<
 
     glfwTerminate();
     return 0;
-}
-
-
-void processInput(GLFWwindow* window, float deltaTime) {
-    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        camera.processKeyboard('W', deltaTime);
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        camera.processKeyboard('S', deltaTime);
-    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        camera.processKeyboard('A', deltaTime);
-    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        camera.processKeyboard('D', deltaTime);
 }
