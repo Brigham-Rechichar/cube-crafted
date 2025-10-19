@@ -92,7 +92,10 @@ int main() {
      0.5f, -0.5f,  0.5f
 };
 
-    Shader shader("../src/graphics/vertex.glsl", "../src/graphics/fragment.glsl");
+    Shader shader("src/graphics/vertex.glsl", "src/graphics/fragment.glsl");
+
+    //Shader shader("C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/vertex.glsl","C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/fragment.glsl");
+
 
     cubeMesh Cube(C1);
 
@@ -111,7 +114,13 @@ int main() {
         glClearColor(0.25f,0.5f,0.75f,1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        
+        shader.use();
+
+        camera.Matrix(45.0f, 0.1f, 100.0f, shader, "camMatrix");
+        camera.Inputs(window);
+
+        glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f));
+        shader.setMat4("model", model);
         Cube.draw();  // draw *after* updating uniforms
 
         glfwSwapBuffers(window);

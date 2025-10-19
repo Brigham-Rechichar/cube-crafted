@@ -1,5 +1,7 @@
 #pragma once
 
+#define GLM_ENABLE_EXPERIMENTAL
+
 //external libraries
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
