@@ -92,9 +92,8 @@ int main() {
      0.5f, -0.5f,  0.5f
 };
 
-    Shader shader("src/graphics/vertex.glsl", "src/graphics/fragment.glsl");
+    Shader shader("../src/graphics/vertex.glsl", "../src/graphics/fragment.glsl");
 
-    //Shader shader("C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/vertex.glsl","C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/fragment.glsl");
 
 
     cubeMesh Cube(C1);
@@ -105,11 +104,6 @@ int main() {
     float lastFrame=0.0f;
 
     while (!glfwWindowShouldClose(window)) {
-
-        // std::cout << "Camera position: " 
-        //   << camera.position.x << " " 
-        //   << camera.position.y << " " 
-        //   << camera.position.z << std::endl;
 
         glClearColor(0.25f,0.5f,0.75f,1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
