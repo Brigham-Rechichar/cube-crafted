@@ -10,10 +10,13 @@ class Player {
         // Instantiate player at relative pos
         explicit Player(glm::vec3 startPos = {0.0f, 0.0f, 0.0f});
 
-        void attachCamera(Camera& cam);
-        void update(GLFWwindow* win, float dt);
+        void attachCamera(Camera& cam); // Link Camera to player
+
+        // Frame update to sync camera / physics
+        void update(GLFWwindow* win, float dt); 
 
 
+        // Movement presets
         float moveSpeed = 4.0f;
         float sprintSpeed = 7.0f;
         float gravity = -20.0f;
@@ -21,7 +24,8 @@ class Player {
         float eyeHeight = 1.8f;
         float groundY = 0.0f;
 
-        glm::vec3 position{};
+
+        glm::vec3 position{}; 
         glm::vec3 velocity{};
         bool grounded = false;
 
@@ -29,7 +33,14 @@ class Player {
 
         Camera* cam = nullptr;
 
+        // Handle input for movement / jumping
         void handleInput(GLFWwindow* win, float dt);
+
+
+        // Update position considering gravity
         void integrate(float dt);
+
+
+        // Collision checking
         void collideWithGround();
 };
