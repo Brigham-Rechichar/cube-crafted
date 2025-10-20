@@ -42,3 +42,19 @@ float World::getHeightAt(float x, float z) const {
 
     return 0.0f;
 }
+
+bool World::inBounds(int x, int y, int z) const {
+    return x >= 0 && x < width && y < height && z < depth;
+}
+
+BlockType World::getBlock(int x, int y, int z) const {
+    // out of bounds is always air
+    if (!inBounds(x, y, z)) return BlockType::Air; 
+    return blocks[getIndex(x, y, z)].getType();
+}
+
+void World::setBlock(int x, int y, int z, BlockType t) {
+    if (!inBounds(x, y, z)) return;
+    block& b = blocks[getIndex(x,y,z)];
+    b.setType(t); // set block type
+}

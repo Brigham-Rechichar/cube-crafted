@@ -19,4 +19,5 @@ class block{
     bool isSolid() const { return type != BlockType::Air; }
 
     BlockType getType() const { return type; }
+    void setType(BlockType t) { type = t; }
 };
