@@ -13,4 +13,6 @@ class World{
 
     inline int getIndex(int x, int y, int z) const {
     return x + width * (y + height * z);}
+
+    float getHeightAt(float x, float z) const;
 };

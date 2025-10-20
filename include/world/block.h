@@ -16,5 +16,7 @@ class block{
     public:
     block(BlockType type, glm::vec3 position);
     void draw(Shader& shader);
+    bool isSolid() const { return type != BlockType::Air; }
 
+    BlockType getType() const { return type; }
 };

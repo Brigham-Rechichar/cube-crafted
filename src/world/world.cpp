@@ -23,3 +23,22 @@ void World::draw(Shader& shader){
         b.draw(shader);
     }
 }
+
+float World::getHeightAt(float x, float z) const {
+
+    int xi = (int)floor(x);
+    int zi = (int)floor(z);
+
+    if (xi < 0 || xi >= width || zi < 0 || zi >= depth) {
+        return 0.0f;
+    }
+
+    for (int y = height - 1; y >= 0; --y) {
+        const block& b = blocks[getIndex(xi, y, zi)];
+        if (b.isSolid()) {
+            return float(y + 1);
+        }
+    }
+
+    return 0.0f;
+}
