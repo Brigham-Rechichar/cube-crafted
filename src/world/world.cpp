@@ -5,7 +5,7 @@ World::World(int width, int depth, int height)
     : width(width), depth(depth), height(height) {}
 
 void World::generate(){
-    
+    blocks.clear();
     blocks.reserve(width * depth * height);
 
     for (int x = 0; x < width; ++x) {

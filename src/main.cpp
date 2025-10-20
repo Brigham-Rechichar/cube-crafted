@@ -69,7 +69,7 @@ int main() {
 
         shader.use();
 
-        player.update(window, dt);
+        player.update(window, dt, world);
         camera.Matrix(45.0f, 0.1f, 100.0f, shader, "camMatrix");
         camera.Inputs(window);
 

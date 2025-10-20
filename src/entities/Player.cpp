@@ -1,4 +1,5 @@
-#include "../../dependencies/glad/glad.h"
+//#include "../../dependencies/glad/glad.h"
+#include "../../include/world/world.h"
 #include "../../include/entities/Player.h"
 #include "../../include/entities/camera.h"
 #include <glm/gtc/constants.hpp>
@@ -15,10 +16,10 @@ void Player::attachCamera(Camera& c) {
 }
 
 // Update every frame for physics / gravity
-void Player::update(GLFWwindow* win, float dt) {
+void Player::update(GLFWwindow* win, float dt, const World& world) {
     handleInput(win, dt); 
     integrate(dt);
-    collideWithGround();
+    collideWithGround(world);
 
     if (cam) {
         cam->setPosition(position + glm::vec3(0.0f, eyeHeight, 0.0f));
@@ -49,13 +50,21 @@ void Player::integrate(float dt) {
 }
 
 // Controls collision
-void Player::collideWithGround() {
-    float feetY = position.y;
-    
-    if (feetY < groundY) {
-        position.y = groundY;
+void Player::collideWithGround(const World& world) {
+    const float terrainY = world.getHeightAt(position.x, position.z);
+    const float eps = 0.02f;
+
+    if (position.y < terrainY) {
+        position.y = terrainY;
         velocity.y = 0.0f;
         grounded = true;
+
+    }
+    else if (position.y <= terrainY + eps) {
+        grounded = true;
+        if (velocity.y < 0.0f) {
+            velocity.y = 0.0f;
+        }
     }
     else {
         grounded = false;

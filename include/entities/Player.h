@@ -4,6 +4,7 @@
 #include <glm/glm.hpp>
 #include <GLFW/glfw3.h>
 #include "camera.h"
+#include "../world/world.h" 
 
 class Player {
     public:
@@ -13,7 +14,7 @@ class Player {
         void attachCamera(Camera& cam); // Link Camera to player
 
         // Frame update to sync camera / physics
-        void update(GLFWwindow* win, float dt); 
+        void update(GLFWwindow* win, float dt, const World& world); 
 
 
         // Movement presets
@@ -42,5 +43,5 @@ class Player {
 
 
         // Collision checking
-        void collideWithGround();
+        void collideWithGround(const World& world);
 };
