@@ -30,4 +30,6 @@ class Camera{
     // Setter & Getter for Position
     void setPosition(const glm::vec3& pos) { Position = pos; }
     glm::vec3 getPosition() const { return Position; }
+
+    glm::vec3 getOrientation() const { return Orientation; }
 };

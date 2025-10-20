@@ -21,7 +21,7 @@ static bool raycastFirstSolid(
 
     lastEmpty = glm::floor(p);
 
-    while (d >= maxDist) {
+    while (d <= maxDist) {
         glm::ivec3 cell = glm::floor(p);
 
         // If player is inbounds and the block they are looking at is solid, will return true
@@ -37,8 +37,6 @@ static bool raycastFirstSolid(
     }
 
     return false;
-
-
 }
 
 // Initialize Position 
@@ -59,6 +57,26 @@ void Player::update(GLFWwindow* win, float dt, World& world) {
     if (cam) {
         cam->setPosition(position + glm::vec3(0.0f, eyeHeight, 0.0f));
     }
+
+    // Place / break input updates
+
+    static bool zHeld = false;
+    static bool xHeld = false;
+
+    const int zState = glfwGetKey(win, GLFW_KEY_Z);
+    const int xState = glfwGetKey(win, GLFW_KEY_X);
+
+    if (zState == GLFW_PRESS && !zHeld) {
+        tryPlace(world);
+    }
+
+    if (xState == GLFW_PRESS && !xHeld) {
+        tryBreak(world);
+    }
+
+    zHeld = (zState == GLFW_PRESS);
+    xHeld = (xState == GLFW_PRESS);
+
 }
 
 // Handle any direction movement or jump input.
@@ -103,5 +121,26 @@ void Player::collideWithGround(const World& world) {
     }
     else {
         grounded = false;
+    }
+}
+
+void Player::tryBreak(World& world) {
+    if (!cam) return;
+
+    glm::ivec3 hit, lastEmpty;
+
+    if (raycastFirstSolid(world, cam->getPosition(), cam->getOrientation(), 6.0f, hit, lastEmpty)) {
+        world.setBlock(hit.x, hit.y, hit.z, BlockType::Air);
+    }
+}
+
+void Player::tryPlace(World& world) {
+    if (!cam) return;
+    glm::ivec3 hit, lastEmpty;
+
+    if (raycastFirstSolid(world, cam->getPosition(), cam->getOrientation(), 6.0f, hit, lastEmpty)) {
+        if (world.inBounds(lastEmpty.x, lastEmpty.y, lastEmpty.z))
+            world.setBlock(lastEmpty.x, lastEmpty.y, lastEmpty.z, BlockType::Grass);
+
     }
 }

@@ -45,5 +45,7 @@ class Player {
         // Collision checking
         void collideWithGround(const World& world);
 
-
+        void tryBreak(World& world);
+        void tryPlace(World& world);
+        
 };
