@@ -47,7 +47,7 @@ int main() {
     Shader shader("../src/graphics/vertex.glsl", "../src/graphics/fragment.glsl");
 
 
-    Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
+    Camera camera(width, height, glm::vec3(0.0f, 10.0f, 0.0f));
 
     float currentFrame;
     float lastFrame=0.0f;
