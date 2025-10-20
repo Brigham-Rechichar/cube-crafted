@@ -26,4 +26,8 @@ class Camera{
 
 	// Handles camera inputs
 	void Inputs(GLFWwindow* window);
+
+    // Setter & Getter for Position
+    void setPosition(const glm::vec3& pos) { Position = pos; }
+    glm::vec3 getPosition() const { return Position; }
 };

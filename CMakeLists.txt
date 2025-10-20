@@ -12,6 +12,7 @@ add_executable(MineCraftClone
     src/entities/triangle.cpp
     src/entities/cubeMesh.cpp
     src/entities/camera.cpp
+    src/entities/Player.cpp
     src/graphics/shader.cpp
     src/glad.c
 )
