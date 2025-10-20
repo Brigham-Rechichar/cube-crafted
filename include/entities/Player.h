@@ -18,10 +18,10 @@ class Player {
 
 
         // Movement presets
-        float moveSpeed = 6.0f;
+        float moveSpeed = 4.0f; // default 4.0
         float sprintSpeed = 9.0f;
         float gravity = -25.0f;
-        float jumpVel = 8.5f;
+        float jumpVel = 8.5f; // default 8.5
         float eyeHeight = 1.8f;
         float groundY = 0.0f;
 
