@@ -8,6 +8,7 @@
 #include"../include/entities/camera.h"
 #include "../include/world/world.h"
 #include "../include/shaders/texture.h"
+#include "../include/ui/Crosshair.h"
 
 int main() {
 
@@ -44,6 +45,9 @@ int main() {
     }
 
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
 
 
     Shader shader("../src/graphics/vertex.glsl", "../src/graphics/fragment.glsl");
@@ -61,13 +65,15 @@ int main() {
     world.generate();
     
     Texture dirtTex(
-        "../assests/pngwing.com.png",    // image path
+        "../assets/pngwing.com.png",    // image path
         GL_TEXTURE_2D,                 // texture type
         GL_TEXTURE0,                   // texture unit slot
         GL_RGBA,                       // format
         GL_UNSIGNED_BYTE               // pixel type
     );
     dirtTex.texUnit(shader.ID, "tex0", 0);
+
+    Crosshair crosshair("../assets/gui/crosshairs.png",width,height);
 
     while (!glfwWindowShouldClose(window)) {
         float currentFrame = glfwGetTime();
@@ -88,10 +94,12 @@ int main() {
         glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f));
         shader.setMat4("model", model);
         world.draw(shader);
+        crosshair.Draw();
 
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+
 
     dirtTex.Delete();
     shader.Delete();

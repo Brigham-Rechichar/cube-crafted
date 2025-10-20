@@ -7,6 +7,7 @@ find_package(glfw3 REQUIRED)
 
 add_executable(MineCraftClone
     src/main.cpp
+    src/ui/Crosshair.cpp
     src/world/block.cpp
     src/world/world.cpp
     src/entities/triangle.cpp

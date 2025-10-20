@@ -51,7 +51,7 @@ void Player::attachCamera(Camera& c) {
 }
 
 // Update every frame for physics / gravity
-void Player::update(GLFWwindow* win, float dt, const World& world) {
+void Player::update(GLFWwindow* win, float dt, World& world) {
     handleInput(win, dt); 
     integrate(dt);
     collideWithGround(world);
