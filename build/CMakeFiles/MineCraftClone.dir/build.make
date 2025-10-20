@@ -86,11 +86,26 @@ CMakeFiles/MineCraftClone.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MineCraftClone.dir/src/main.cpp.s"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\main.cpp" -o CMakeFiles\MineCraftClone.dir\src\main.cpp.s
 
+CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj: CMakeFiles/MineCraftClone.dir/flags.make
+CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
+CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/ui/Crosshair.cpp
+CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj"
+	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\ui\Crosshair.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\ui\Crosshair.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\ui\Crosshair.cpp"
+
+CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.i"
+	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\ui\Crosshair.cpp" > CMakeFiles\MineCraftClone.dir\src\ui\Crosshair.cpp.i
+
+CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.s"
+	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\ui\Crosshair.cpp" -o CMakeFiles\MineCraftClone.dir\src\ui\Crosshair.cpp.s
+
 CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj: CMakeFiles/MineCraftClone.dir/flags.make
 CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/world/block.cpp
 CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\world\block.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\world\block.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\world\block.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/world/block.cpp.i: cmake_force
@@ -105,7 +120,7 @@ CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj: CMakeFiles/MineCraftClone
 CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/world/world.cpp
 CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\world\world.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\world\world.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\world\world.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/world/world.cpp.i: cmake_force
@@ -120,7 +135,7 @@ CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: CMakeFiles/MineCraf
 CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/entities/triangle.cpp
 CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\entities\triangle.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\entities\triangle.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\entities\triangle.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.i: cmake_force
@@ -135,7 +150,7 @@ CMakeFiles/MineCraftClone.dir/src/entities/cubeMesh.cpp.obj: CMakeFiles/MineCraf
 CMakeFiles/MineCraftClone.dir/src/entities/cubeMesh.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/entities/cubeMesh.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/entities/cubeMesh.cpp
 CMakeFiles/MineCraftClone.dir/src/entities/cubeMesh.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/cubeMesh.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/cubeMesh.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/entities/cubeMesh.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\entities\cubeMesh.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\entities\cubeMesh.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\entities\cubeMesh.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/entities/cubeMesh.cpp.i: cmake_force
@@ -150,7 +165,7 @@ CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: CMakeFiles/MineCraftC
 CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/entities/camera.cpp
 CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\entities\camera.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\entities\camera.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\entities\camera.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/entities/camera.cpp.i: cmake_force
@@ -165,7 +180,7 @@ CMakeFiles/MineCraftClone.dir/src/entities/Player.cpp.obj: CMakeFiles/MineCraftC
 CMakeFiles/MineCraftClone.dir/src/entities/Player.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/entities/Player.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/entities/Player.cpp
 CMakeFiles/MineCraftClone.dir/src/entities/Player.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MineCraftClone.dir/src/entities/Player.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/entities/Player.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\entities\Player.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\entities\Player.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\entities\Player.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/entities/Player.cpp.i: cmake_force
@@ -180,7 +195,7 @@ CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj: CMakeFiles/MineCraftC
 CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/graphics/shader.cpp
 CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\graphics\shader.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\graphics\shader.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\graphics\shader.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/graphics/shader.cpp.i: cmake_force
@@ -195,7 +210,7 @@ CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj: CMakeFiles/MineCraft
 CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/graphics/texture.cpp
 CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\graphics\texture.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\graphics\texture.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\graphics\texture.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.i: cmake_force
@@ -210,7 +225,7 @@ CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj: CMakeFiles/MineCraftClone.d
 CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj: CMakeFiles/MineCraftClone.dir/includes_CXX.rsp
 CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/stb_image.cpp
 CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj"
 	c:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj -MF CMakeFiles\MineCraftClone.dir\src\stb_image.cpp.obj.d -o CMakeFiles\MineCraftClone.dir\src\stb_image.cpp.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\stb_image.cpp"
 
 CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.i: cmake_force
@@ -225,7 +240,7 @@ CMakeFiles/MineCraftClone.dir/src/glad.c.obj: CMakeFiles/MineCraftClone.dir/flag
 CMakeFiles/MineCraftClone.dir/src/glad.c.obj: CMakeFiles/MineCraftClone.dir/includes_C.rsp
 CMakeFiles/MineCraftClone.dir/src/glad.c.obj: C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/src/glad.c
 CMakeFiles/MineCraftClone.dir/src/glad.c.obj: CMakeFiles/MineCraftClone.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/MineCraftClone.dir/src/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/MineCraftClone.dir/src/glad.c.obj"
 	c:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MineCraftClone.dir/src/glad.c.obj -MF CMakeFiles\MineCraftClone.dir\src\glad.c.obj.d -o CMakeFiles\MineCraftClone.dir\src\glad.c.obj -c "C:\Users\brigg\Downloads\coding practice\minecraft_clone\src\glad.c"
 
 CMakeFiles/MineCraftClone.dir/src/glad.c.i: cmake_force
@@ -239,6 +254,7 @@ CMakeFiles/MineCraftClone.dir/src/glad.c.s: cmake_force
 # Object files for target MineCraftClone
 MineCraftClone_OBJECTS = \
 "CMakeFiles/MineCraftClone.dir/src/main.cpp.obj" \
+"CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj" \
 "CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj" \
 "CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj" \
 "CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj" \
@@ -254,6 +270,7 @@ MineCraftClone_OBJECTS = \
 MineCraftClone_EXTERNAL_OBJECTS =
 
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/main.cpp.obj
+MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/src/entities/triangle.cpp.obj
@@ -269,7 +286,7 @@ MineCraftClone.exe: C:/msys64/ucrt64/lib/libglfw3.dll.a
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/linkLibs.rsp
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/objects1.rsp
 MineCraftClone.exe: CMakeFiles/MineCraftClone.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable MineCraftClone.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\brigg\Downloads\coding practice\minecraft_clone\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable MineCraftClone.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MineCraftClone.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

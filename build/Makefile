@@ -344,6 +344,30 @@ src/stb_image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.s
 .PHONY : src/stb_image.cpp.s
 
+src/ui/Crosshair.obj: src/ui/Crosshair.cpp.obj
+.PHONY : src/ui/Crosshair.obj
+
+# target to build an object file
+src/ui/Crosshair.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj
+.PHONY : src/ui/Crosshair.cpp.obj
+
+src/ui/Crosshair.i: src/ui/Crosshair.cpp.i
+.PHONY : src/ui/Crosshair.i
+
+# target to preprocess a source file
+src/ui/Crosshair.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.i
+.PHONY : src/ui/Crosshair.cpp.i
+
+src/ui/Crosshair.s: src/ui/Crosshair.cpp.s
+.PHONY : src/ui/Crosshair.s
+
+# target to generate assembly for a file
+src/ui/Crosshair.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MineCraftClone.dir\build.make CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.s
+.PHONY : src/ui/Crosshair.cpp.s
+
 src/world/block.obj: src/world/block.cpp.obj
 .PHONY : src/world/block.obj
 
@@ -428,6 +452,9 @@ help:
 	@echo ... src/stb_image.obj
 	@echo ... src/stb_image.i
 	@echo ... src/stb_image.s
+	@echo ... src/ui/Crosshair.obj
+	@echo ... src/ui/Crosshair.i
+	@echo ... src/ui/Crosshair.s
 	@echo ... src/world/block.obj
 	@echo ... src/world/block.i
 	@echo ... src/world/block.s

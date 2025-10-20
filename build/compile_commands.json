@@ -7,6 +7,12 @@
 },
 {
   "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
+  "command": "c:\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_CXX.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\ui\\Crosshair.cpp.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\ui\\Crosshair.cpp\"",
+  "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/ui/Crosshair.cpp",
+  "output": "CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj"
+},
+{
+  "directory": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/build",
   "command": "c:\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/MineCraftClone.dir/includes_CXX.rsp -g -o CMakeFiles\\MineCraftClone.dir\\src\\world\\block.cpp.obj -c \"C:\\Users\\brigg\\Downloads\\coding practice\\minecraft_clone\\src\\world\\block.cpp\"",
   "file": "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/world/block.cpp",
   "output": "CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj"

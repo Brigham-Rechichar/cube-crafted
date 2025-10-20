@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MineCraftClone.dir/src/main.cpp.obj.d"
   "CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj"
   "CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj.d"
+  "CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj"
+  "CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj.d"
   "CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj"
   "CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj.d"
   "CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj"

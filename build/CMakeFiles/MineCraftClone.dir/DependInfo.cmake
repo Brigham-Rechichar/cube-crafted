@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/graphics/texture.cpp" "CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/graphics/texture.cpp.obj.d"
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/main.cpp" "CMakeFiles/MineCraftClone.dir/src/main.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/main.cpp.obj.d"
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/stb_image.cpp" "CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/stb_image.cpp.obj.d"
+  "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/ui/Crosshair.cpp" "CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/ui/Crosshair.cpp.obj.d"
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/world/block.cpp" "CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/world/block.cpp.obj.d"
   "C:/Users/brigg/Downloads/coding practice/minecraft_clone/src/world/world.cpp" "CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj" "gcc" "CMakeFiles/MineCraftClone.dir/src/world/world.cpp.obj.d"
   )

@@ -381,4 +381,5 @@ CMakeFiles/MineCraftClone.dir/src/main.cpp.obj: \
  C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/world/block.h \
  C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/entities/cubeMesh.h \
  C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/entities/triangle.h \
- C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/shaders/texture.h
+ C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/shaders/texture.h \
+ C:/Users/brigg/Downloads/coding\ practice/minecraft_clone/include/ui/Crosshair.h
