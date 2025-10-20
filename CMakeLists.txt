@@ -14,6 +14,8 @@ add_executable(MineCraftClone
     src/entities/camera.cpp
     src/entities/Player.cpp
     src/graphics/shader.cpp
+    src/graphics/texture.cpp
+    src/stb_image.cpp
     src/glad.c
 )
 

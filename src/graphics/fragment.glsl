@@ -2,7 +2,10 @@
 
 out vec4 FragColor;
 
+in vec2 TexCoord;           // from vertex shader
+uniform sampler2D tex0;     // the bound texture
+
 void main()
 {
-    FragColor = vec4(0.3, 0.9, 0.5, 1.0); // greenish
+    FragColor = texture(tex0, TexCoord);
 }
