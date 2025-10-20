@@ -21,5 +21,4 @@ public:
     BlockType getBlock(int x, int y, int z) const;
     void setBlock(int x, int y, int z, BlockType t);
     void removeBlock(int x, int y, int z) { setBlock(x, y, z, BlockType::Air);}
-
 };

@@ -14,7 +14,7 @@ class Player {
         void attachCamera(Camera& cam); // Link Camera to player
 
         // Frame update to sync camera / physics
-        void update(GLFWwindow* win, float dt, const World& world); 
+        void update(GLFWwindow* win, float dt, World& world); 
 
 
         // Movement presets
@@ -44,4 +44,6 @@ class Player {
 
         // Collision checking
         void collideWithGround(const World& world);
+
+
 };
