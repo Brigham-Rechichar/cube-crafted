@@ -7,6 +7,7 @@
 #include"../include/entities/cubeMesh.h"
 #include"../include/entities/camera.h"
 #include "../include/world/world.h"
+#include "../include/shaders/texture.h"
 
 int main() {
 
@@ -24,8 +25,8 @@ int main() {
         return -1;
     }
 
-    int width =800;
-    int height =600;
+    int width =800*2;
+    int height =600*2;
     GLFWwindow* window = glfwCreateWindow(width, height, "Minecraft Clone", NULL, NULL);
 
     glfwMakeContextCurrent(window);
@@ -58,6 +59,15 @@ int main() {
 
     World world(16,16,8);
     world.generate();
+    
+    Texture dirtTex(
+        "../assests/pngwing.com.png",    // image path
+        GL_TEXTURE_2D,                 // texture type
+        GL_TEXTURE0,                   // texture unit slot
+        GL_RGBA,                       // format
+        GL_UNSIGNED_BYTE               // pixel type
+    );
+    dirtTex.texUnit(shader.ID, "tex0", 0);
 
     while (!glfwWindowShouldClose(window)) {
         float currentFrame = glfwGetTime();
@@ -68,6 +78,8 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         shader.use();
+        dirtTex.Bind();
+        
 
         player.update(window, dt, world);
         camera.Matrix(45.0f, 0.1f, 100.0f, shader, "camMatrix");
@@ -81,6 +93,8 @@ int main() {
         glfwPollEvents();
     }
 
+    dirtTex.Delete();
+    shader.Delete();
     glfwTerminate();
     return 0;
 }
