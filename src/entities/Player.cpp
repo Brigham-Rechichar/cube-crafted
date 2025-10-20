@@ -1,9 +1,8 @@
 //#include "../../dependencies/glad/glad.h"
+#include "../config.h"
 #include "../../include/world/world.h"
 #include "../../include/entities/Player.h"
 #include "../../include/entities/camera.h"
-#include <glm/gtc/constants.hpp>
-#include <glm/gtc/matrix_transform.hpp>
 
 // Initialize Position 
 Player::Player(glm::vec3 startPos) : position(startPos) {}
