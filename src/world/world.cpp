@@ -44,7 +44,7 @@ float World::getHeightAt(float x, float z) const {
 }
 
 bool World::inBounds(int x, int y, int z) const {
-    return x >= 0 && x < width && y < height && z < depth;
+    return x >= 0 && x < width && y>= 0 && y < height && z>=0 && z < depth;
 }
 
 BlockType World::getBlock(int x, int y, int z) const {

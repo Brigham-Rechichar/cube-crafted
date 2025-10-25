@@ -63,19 +63,15 @@ void Player::update(GLFWwindow* win, float dt, World& world) {
     static bool zHeld = false;
     static bool xHeld = false;
 
-    const int zState = glfwGetKey(win, GLFW_KEY_Z);
-    const int xState = glfwGetKey(win, GLFW_KEY_X);
+    int z = glfwGetKey(win, GLFW_KEY_Z);
+    int x = glfwGetKey(win, GLFW_KEY_X);
 
-    if (zState == GLFW_PRESS && !zHeld) {
-        tryPlace(world);
-    }
 
-    if (xState == GLFW_PRESS && !xHeld) {
-        tryBreak(world);
-    }
+    if (z == GLFW_PRESS && !zHeld) tryPlace(world);
+    if (x == GLFW_PRESS && !xHeld) tryBreak(world);
 
-    zHeld = (zState == GLFW_PRESS);
-    xHeld = (xState == GLFW_PRESS);
+    zHeld = (z==GLFW_PRESS);
+    xHeld = (x==GLFW_PRESS);
 
 }
 
@@ -138,9 +134,16 @@ void Player::tryPlace(World& world) {
     if (!cam) return;
     glm::ivec3 hit, lastEmpty;
 
+    const glm::ivec3 eyeCell = glm::floor(cam->getPosition());
+
     if (raycastFirstSolid(world, cam->getPosition(), cam->getOrientation(), 6.0f, hit, lastEmpty)) {
         if (world.inBounds(lastEmpty.x, lastEmpty.y, lastEmpty.z))
             world.setBlock(lastEmpty.x, lastEmpty.y, lastEmpty.z, BlockType::Grass);
 
+    }
+    else {
+        if (world.inBounds(lastEmpty.x, lastEmpty.y, lastEmpty.z) && lastEmpty != eyeCell) {
+            world.setBlock(lastEmpty.x, lastEmpty.y, lastEmpty.z, BlockType::Grass);
+        }
     }
 }
