@@ -65,7 +65,7 @@ int main() {
     world.generate();
     
     Texture dirtTex(
-        "../assets/pngwing.com.png",    // image path
+        "../assets/block.png",    // image path
         GL_TEXTURE_2D,                 // texture type
         GL_TEXTURE0,                   // texture unit slot
         GL_RGBA,                       // format
